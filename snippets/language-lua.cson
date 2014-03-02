@@ -1,0 +1,22 @@
+'.source.lua':
+  'for i,v in ipairs()':
+    'prefix': 'fori'
+    'body': 'for ${1:i},${2:v} in ipairs(${3:table_name}) do\n\t${0:print(i,v)}\nend'
+  'for i=1,10':
+    'prefix': 'for'
+    'body': 'for ${1:i}=${2:1},${3:10} do\n\t${0:print(i)}\nend'
+  'for k,v in pairs()':
+    'prefix': 'forp'
+    'body': 'for ${1:k},${2:v} in pairs(${3:table_name}) do\n\t${0:print(k,v)}\nend'
+  'function':
+    'prefix': 'function'
+    'body': 'function ${1:function_name}( ${2:...} )\n\t${0:-- body}\nend'
+  'local x = 1':
+    'prefix': 'local'
+    'body': 'local ${1:x} = ${0:1}'
+  'table.concat':
+    'prefix': 'table.concat'
+    'body': 'table.concat( ${1:tablename}${2:, ", "}${3:, start_index}${4:, end_index} )'
+  'table.sort':
+    'prefix': 'table.sort'
+    'body': 'table.sort( ${1:tablename}${2:, sortfunction} )'
