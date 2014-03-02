@@ -20,8 +20,8 @@ Common snippets
 | ifne          | if not else conditional  | if not value then --body... else --body... end |
 | loc           | local variable definition shortcut | local x = 1 |
 | local         | local variable definition | local x = 1 |
-| log           | log                      | print("logging")     |
 | ltab          | local table definition   | local name = {}      |
+| print         | print                    | print("logging")     |
 | rep           | repeat loop shortcut     | repeat -- body... until condition |
 | repeat        | repeat loop              | repeat -- body... until condition |
 | req           | require shortcut         | local name = require "module" |
@@ -30,9 +30,9 @@ Common snippets
 | return        | return definition        | return value         |
 | tab           | table definition         | name = {}            |
 | whi           | while loop shortcut      | while condition do -- body... end |
-| while         | while loop shortcut      | while condition do -- body... end |
+| while         | while loop               | while condition do -- body... end |
 
-Table function snippets
+Table manipulation snippets
 ---
 | Trigger       | Name                     | Body                 |
 | ------------- |--------------------------| ---------------------|
@@ -40,7 +40,42 @@ Table function snippets
 | tabf          | table.foreach            | table.foreach(tableName, function) |
 | tabi          | table.insert             | table.insert(tableName, data) |
 | tabs          | table.sort               | table.sort(tableName, sortfunction) |
+| tabr          | table.remove             | table.remove(tableName, position) |
+| tabm          | table.maxn               | table.maxn(tableName)
 
+Math function snippets
+---
+| Trigger       | Name                     | Body                 |
+| ------------- |--------------------------| ---------------------|
+| abs           | math.abs                 | math.abs(x)          |
+| acos          | math.acos                | math.acos(x)         |
+| asin          | math.asin                | math.asin(x)         |
+| atan          | math.atan                | math.atan(x)         |
+| atan2         | math.atan2               | math.atan2(y, x)     |
+| ceil          | math.ceil                | math.ceil(x)         |
+| cos           | math.cos                 | math.cos(x)          |
+| cosh          | math.cosh                | math.cosh(x)         |
+| deg           | math.deg                 | math.deg(x)          |
+| exp           | math.exp                 | math.exp(x)          |
+| floor         | math.floor               | math.floor(x)        |
+| fmod          | math.fmod                | math.fmod(x, y)      |
+| frexp         | math.frexp               | math.frexp(x)        |
+| huge          | math.huge                | math.huge            |
+| ldexp         | math.ldexp               | math.ldexp(m, e)     |
+| log           | math.log                 | math.log(x)          |
+| log10         | math.log10               | math.log10(x)        |
+| max           | math.max                 | math.max(x, ...)     |
+| min           | math.min                 | math.min(x, ...)     |
+| pi            | math.pi                  | math.pi              |
+| pow           | math.pow                 | math.pow(x, y)       |
+| rad           | math.rad                 | math.rad(x)          |
+| random        | math.random              | math.random(m, n)    |
+| randomseed    | math.randomseed          | math.randomseed(x)   |
+| sin           | math.sin                 | math.sin(x)          |
+| sinh          | math.sinh                | math.sinh(x)         |
+| sqrt          | math.sqrt                | math.sqrt(x)         |
+| tan           | math.tan                 | math.tan(x)          |
+| tanh          | math.tanh                | math.tanh(x)         |
 
 Author
 ------
