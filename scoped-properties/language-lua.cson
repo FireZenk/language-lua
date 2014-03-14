@@ -1,4 +1,5 @@
 '.source.lua':
   'editor':
+    'commentStart': '-- '
     'increaseIndentPattern': '\\b(else|elseif|(local\\s+)?function|then|do|repeat)\\b((?!end).)*$|\\{\\s*$'
     'decreaseIndentPattern': '^\\s*(elseif|else|end|\\})\\s*$'
