@@ -91,7 +91,7 @@ pull request to add snippets, make grammar tweaks, etc.
 
 License
 ------
-Bigot is released under the MIT license.
+Atom language-lua is released under the MIT license.
 
 >Originally [converted](http://atom.io/docs/latest/converting-a-text-mate-bundle)
 from the [Lua TextMate bundle](https://github.com/textmate/lua.tmbundle).
