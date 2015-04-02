@@ -1,6 +1,7 @@
 'comment': 'Lua Syntax: version 0.8'
 'fileTypes': [
   'lua'
+  'nse'
 ]
 'firstLineMatch': '\\A#!.*?\\blua\\b'
 'name': 'Lua'
