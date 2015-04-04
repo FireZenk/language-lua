@@ -32,6 +32,9 @@
   'for k,v in pairs()':
     'prefix': 'forp'
     'body': 'for ${1:k},${2:v} in pairs(${3:table_name}) do\n\t${0:-- body...}\nend'
+  'local function':
+    'prefix': 'lfun'
+    'body': 'local function ${1:FunctionName} (${2:args})\n\t${0:-- body...}\nend'  
   'local variable definition':
     'prefix': 'local'
     'body': 'local ${1:x} = ${0:1}'

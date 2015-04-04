@@ -21,6 +21,7 @@ Common snippets
 | ife           | if else conditional      | if value then --body... else --body... end |
 | ifn           | if not conditional       | if not value then --body... end |
 | ifne          | if not else conditional  | if not value then --body... else --body... end |
+| lfun          | local function           | local function functionName (args) -- body... end |
 | loc           | local variable definition shortcut | local x = 1 |
 | local         | local variable definition | local x = 1 |
 | ltab          | local table definition   | local name = {}      |
