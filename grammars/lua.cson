@@ -39,6 +39,12 @@
     'name': 'string.quoted.single.lua'
     'patterns': [
       {
+        'include': 'punctuation.definition.string.begin.lua'
+      }
+      {
+        'include': 'punctuation.definition.string.end.lua'
+      }
+      {
         'match': '\\\\.'
         'name': 'constant.character.escape.lua'
       }
@@ -55,6 +61,12 @@
         'name': 'punctuation.definition.string.end.lua'
     'name': 'string.quoted.double.lua'
     'patterns': [
+      {
+        'include': 'punctuation.definition.string.begin.lua'
+      }
+      {
+        'include': 'punctuation.definition.string.end.lua'
+      }
       {
         'match': '\\\\.'
         'name': 'constant.character.escape.lua'
