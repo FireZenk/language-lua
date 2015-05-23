@@ -113,7 +113,7 @@
     'name': 'comment.block.lua'
   }
   {
-    'begin': '(^[ \\t]+)?(?=--(?!\\[\\[))'
+    'begin': '(^[ \\t]+)?(?=--(?!\\[(=*)\\[))'
     'beginCaptures':
       '1':
         'name': 'punctuation.whitespace.comment.leading.lua'
