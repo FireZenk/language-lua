@@ -3,6 +3,8 @@
   'lua'
   'nse'
   'rockspec'
+  'luacheckrc'
+  'lakefile'
 ]
 'firstLineMatch': '\\A#!.*?\\blua\\b'
 'name': 'Lua'
