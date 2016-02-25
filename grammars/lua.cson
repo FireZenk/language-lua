@@ -2,6 +2,7 @@
 'fileTypes': [
   'lua'
   'nse'
+  'rockspec'
 ]
 'firstLineMatch': '\\A#!.*?\\blua\\b'
 'name': 'Lua'
