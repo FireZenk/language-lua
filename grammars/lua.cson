@@ -133,7 +133,7 @@
     ]
   }
   {
-    'match': '\\b(and|or|not|break|do|else|for|if|elseif|return|then|repeat|while|until|end|function|local|in)\\b'
+    'match': '\\b(and|or|not|break|do|else|for|if|elseif|return|then|repeat|while|until|end|function|local|in|goto)\\b'
     'name': 'keyword.control.lua'
   }
   {
