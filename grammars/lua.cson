@@ -2,6 +2,9 @@
 'fileTypes': [
   'lua'
   'nse'
+  'rockspec'
+  'luacheckrc'
+  'lakefile'
 ]
 'firstLineMatch': '\\A#!.*?\\blua\\b'
 'name': 'Lua'
@@ -113,7 +116,7 @@
     'name': 'comment.block.lua'
   }
   {
-    'begin': '(^[ \\t]+)?(?=--(?!\\[\\[))'
+    'begin': '(^[ \\t]+)?(?=--(?!\\[(=*)\\[))'
     'beginCaptures':
       '1':
         'name': 'punctuation.whitespace.comment.leading.lua'
@@ -130,7 +133,7 @@
     ]
   }
   {
-    'match': '\\b(break|do|else|for|if|elseif|return|then|repeat|while|until|end|function|local|in)\\b'
+    'match': '\\b(and|or|not|break|do|else|for|if|elseif|return|then|repeat|while|until|end|function|local|in|goto)\\b'
     'name': 'keyword.control.lua'
   }
   {
@@ -148,10 +151,6 @@
   {
     'match': '(?<![^.]\\.|:)\\b(coroutine\\.(create|resume|running|status|wrap|yield)|string\\.(byte|char|dump|find|format|gmatch|gsub|len|lower|match|rep|reverse|sub|upper)|table\\.(concat|insert|maxn|remove|sort)|math\\.(abs|acos|asin|atan2?|ceil|cosh?|deg|exp|floor|fmod|frexp|ldexp|log|log10|max|min|modf|pow|rad|random|randomseed|sinh?|sqrt|tanh?)|io\\.(close|flush|input|lines|open|output|popen|read|tmpfile|type|write)|os\\.(clock|date|difftime|execute|exit|getenv|remove|rename|setlocale|time|tmpname)|package\\.(cpath|loaded|loadlib|path|preload|seeall)|debug\\.(debug|[gs]etfenv|[gs]ethook|getinfo|[gs]etlocal|[gs]etmetatable|getregistry|[gs]etupvalue|traceback))\\b(?=\\s*(?:[({"\']|\\[\\[))'
     'name': 'support.function.library.lua'
-  }
-  {
-    'match': '\\b(and|or|not)\\b'
-    'name': 'keyword.operator.lua'
   }
   {
     'match': '\\b([A-Za-z_]\\w*)\\b(?=\\s*(?:[({"\']|\\[\\[))'
