@@ -1,6 +1,6 @@
 {
   "name": "language-lua",
-  "version": "0.9.8",
+  "version": "0.9.9",
   "private": false,
   "author": "FireZenk <firezenk@gmail.com>",
   "description": "Add syntax highlighting and snippets to Lua files in Atom",
