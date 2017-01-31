@@ -27,6 +27,15 @@
     'name': 'meta.function.lua'
   }
   {
+    "captures": {
+      "1": {
+        "name": "entity.name.type.class"
+      }
+    },
+    "match": "(\\b([A-Z][a-z_]+[A-Z]*)+\\b)",
+    "name": "entity.name.type.class.lua"
+  }
+  {
     'match': '(?<![\\d.])\\s0x[a-fA-F\\d]+|\\b\\d+(\\.\\d+)?([eE]-?\\d+)?|\\.\\d+([eE]-?\\d+)?'
     'name': 'constant.numeric.lua'
   }
