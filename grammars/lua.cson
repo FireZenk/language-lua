@@ -8,6 +8,17 @@
 ]
 'firstLineMatch': '\\A#!.*?\\blua\\b'
 'name': 'Lua'
+'repository':
+  'characterEscape':
+    'patterns': [
+      {
+        'match': '\\\\(\\d{1,3}|[abfnrtv\\\\"\'])|(\\\\.)'
+        'name': 'constant.character.escape.lua'
+        'captures':
+          '2':
+            'name': 'invalid.illegal.character.escape.lua'
+      }
+    ]
 'patterns': [
   {
     'captures':
@@ -48,8 +59,7 @@
         'include': 'punctuation.definition.string.end.lua'
       }
       {
-        'match': '\\\\.'
-        'name': 'constant.character.escape.lua'
+        'include': '#characterEscape'
       }
     ]
   }
@@ -71,8 +81,7 @@
         'include': 'punctuation.definition.string.end.lua'
       }
       {
-        'match': '\\\\.'
-        'name': 'constant.character.escape.lua'
+        'include': '#characterEscape'
       }
     ]
   }
