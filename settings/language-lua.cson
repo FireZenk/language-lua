@@ -3,3 +3,4 @@
     'commentStart': '-- '
     'increaseIndentPattern': '((\\b(else|function|then|do|repeat)\\b((?!\\b(end|until)\\b).)*)|(\\{\\s*))$'
     'decreaseIndentPattern': '^\\s*((\\b(elseif|else|end|until)\\b)|(\\})|(\\)))'
+    'foldEndPattern': '^\\s*\\}|^\\s*\\]|^\\s*\\)|^\\s*end$'
