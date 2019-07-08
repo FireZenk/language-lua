@@ -154,7 +154,7 @@
     'name': 'keyword.control.lua'
   }
   {
-    'match': '(?<![^.]\\.|:)\\b(false|nil|true|_G|_VERSION|math\\.(pi|huge))\\b|(?<![.])\\.{3}(?!\\.)'
+    'match': '(?<![^.]\\.|:)\\b([A-Z_]+|false|nil|true|math\\.(pi|huge))\\b|(?<![.])\\.{3}(?!\\.)'
     'name': 'constant.language.lua'
   }
   {
