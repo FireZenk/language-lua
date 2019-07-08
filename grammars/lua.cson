@@ -133,6 +133,23 @@
     ]
   }
   {
+    'begin': '(^[ \\t]+)?(?=//(?!\\[(=*)\\[))'
+    'beginCaptures':
+      '1':
+        'name': 'punctuation.whitespace.comment.leading.lua'
+    'end': '(?!\\G)'
+    'patterns': [
+      {
+        'begin': '//'
+        'beginCaptures':
+          '0':
+            'name': 'punctuation.definition.comment.lua'
+        'end': '\\n'
+        'name': 'comment.line.double-slash.lua'
+      }
+    ]
+  }
+  {
     'match': '\\b(and|or|not|break|do|else|for|if|elseif|return|then|repeat|while|until|end|function|local|in|goto)\\b'
     'name': 'keyword.control.lua'
   }
