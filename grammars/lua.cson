@@ -133,11 +133,28 @@
     ]
   }
   {
+    'begin': '(^[ \\t]+)?(?=//(?!\\[(=*)\\[))'
+    'beginCaptures':
+      '1':
+        'name': 'punctuation.whitespace.comment.leading.lua'
+    'end': '(?!\\G)'
+    'patterns': [
+      {
+        'begin': '//'
+        'beginCaptures':
+          '0':
+            'name': 'punctuation.definition.comment.lua'
+        'end': '\\n'
+        'name': 'comment.line.double-slash.lua'
+      }
+    ]
+  }
+  {
     'match': '\\b(and|or|not|break|do|else|for|if|elseif|return|then|repeat|while|until|end|function|local|in|goto)\\b'
     'name': 'keyword.control.lua'
   }
   {
-    'match': '(?<![^.]\\.|:)\\b([A-Z_]+|false|nil|true|math\\.(pi|huge))\\b|(?<![.])\\.{3}(?!\\.)'
+    'match': '(?<![^.]\\.|:)\\b(false|nil|true|_G|_VERSION|math\\.(pi|huge))\\b|(?<![.])\\.{3}(?!\\.)'
     'name': 'constant.language.lua'
   }
   {
